@@ -1,0 +1,17 @@
+{
+  "name": "js-in-42hrs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./basics/ssr",
+    "basics": "nodemon basics.js",
+    "events": "nodemon ./basics/events.js",
+    "modules": "nodemon ./basics/modules/modules.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.3"
+  }
+}

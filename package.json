@@ -3,15 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon ./basics/ssr",
-    "basics": "nodemon basics.js",
-    "events": "nodemon ./basics/events.js",
-    "modules": "nodemon ./basics/modules/modules.js"
+    "basics": "nodemon ./node/ssr",
+    "events": "nodemon ./node/events.js",
+    "modules": "nodemon ./node/modules/modules.js",
+    "app-v1": "nodemon ./app-v1.js",
+    "start": "nodemon --env-file=./config.env ./server.js",
+    "start:prod": "SET NODE_ENV=production&nodemon --env-file=config.env ./server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
     "nodemon": "^3.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.3",
+    "prettier": "^3.3.2"
   }
 }

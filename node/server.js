@@ -20,3 +20,4 @@ server.on("close", () => {
 
 server.listen(8000, "127.0.0.1"); // use browser
 // the server request events are are inbuilt i/o poling, the request and response args are also inbuilt
+// the http method used here is seamingly "GET"

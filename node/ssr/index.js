@@ -21,6 +21,7 @@ const cardTemplate = fs.readFileSync(
 
 // server
 
+//cxreate server
 const server = createServer();
 server.on("request", (req, res) => {
   const { pathname, query } = url.parse(req.url, true);
@@ -37,5 +38,7 @@ server.on("request", (req, res) => {
     res.end("page not found");
   }
 });
+
+// listen
 
 server.listen(3000, "127.0.0.1");

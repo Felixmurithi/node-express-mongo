@@ -32,3 +32,6 @@ setImmediate(() => {
 // the event loop is implements a hard maximum of how many  to stop the io polling checks can be done at time before movging on to the next phase to stop io from starving other
 
 //json parsing can start to take a lot of time, dont use regular nested expressions eg quantifiers
+
+////  Node Runtime Variables
+//For each node process/runtime has global variables can be set by using

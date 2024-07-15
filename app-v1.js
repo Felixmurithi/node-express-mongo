@@ -2,17 +2,17 @@
 const currentModuleDir = import.meta.dirname; // The current module's directory name
 const currentModuleFile = import.meta.filename; // The current module's file name
 
-import morgan from "morgan";
+import morgan from 'morgan';
 //package to log each request http method, status code, resposnse time and payload size
 
 ////MAIN APP
 //express.js is 100% node.js under the hood,
-import express from "express";
+import express from 'express';
 const app = express();
 
 //listening to get request methods on the app
-app.get("/", (req, res) => {
-  res.status(200).send("hello");
+app.get('/', (req, res) => {
+  res.status(200).send('hello');
   //the res can chains the status header and the response data together
 });
 
@@ -31,12 +31,12 @@ app.get("/", (req, res) => {
 app.use((req, res, next) => {
   const requestTime = new Date().toISOString();
   req.requestTime = requestTime;
-  console.log("current time added to the request");
+  console.log('current time added to the request');
   next();
 });
 
 //morgan-middleware that logs each request on the server- dev option logs the request/respinse code and the response duration and the payload size-
-app.use(morgan("dev"));
+app.use(morgan('dev'));
 
 // expree.json() for parsing Json- without it json data in the request body will be undefined,  this middleware can be used befoie express
 app.use(express.json());
@@ -47,7 +47,7 @@ app.use(express.json());
 
 //PARAMS
 //gets accsed to parameters, receives a valid paramter name and a callback function
-app.param("id", (req, res, next, id) => {
+app.param('id', (req, res, next, id) => {
   console.log(id);
   next();
 });
@@ -56,29 +56,29 @@ app.param("id", (req, res, next, id) => {
 // these are callback functions can be reused in as middleware
 const hello = (req, res) => {
   console.log(req.body);
-  res.json({ res: "hello there" });
+  res.json({ res: 'hello there' });
 };
 const hi = (req, res) => {
   console.log(req.body);
-  res.json({ res: "hi there" });
+  res.json({ res: 'hi there' });
 };
 
 //ENDPOINTS
 //params ,optional params or search params
-app.get("/api/v1/products/:id/:label?", (req, res) => {
+app.get('/api/v1/products/:id/:label?', (req, res) => {
   console.log(req.params);
 });
 
 // app.post("/api/v1/products", hi);
 
 // delete - null is usualyy sent back as data- no content sent to the client
-app.delete("/api/v1/products/", (req, res) => {
+app.delete('/api/v1/products/', (req, res) => {
   console.log(req.body);
   res.json({ res: null });
 });
 
 // chaining requests- http request can be chained, request object modifying middleware can also be chained.
-app.route("/api/v1/products/:id/:label?").get(hello).post(hi, hello);
+app.route('/api/v1/products/:id/:label?').get(hello).post(hi, hello);
 
 ////SUB ROUTERS
 //used to divide up the route into different resource endpooints. the are created at express.Router
@@ -87,23 +87,22 @@ const productsRouter = express.Router();
 const usersRouter = express.Router();
 
 // the sub routes mounted as middleware on the main app on individual root route segments
-app.use("/api/v1/products", productsRouter);
-app.use("/api/v1/users", usersRouter);
+app.use('/api/v1/products', productsRouter);
+app.use('/api/v1/users', usersRouter);
 
 // a route is defined on the the sub routers and http method directed towards that.
-productsRouter.route("/").get(hello).post(hi);
-
-console.log(process.env);
+productsRouter.route('/').get(hello).post(hi);
 
 //SERVER
 const port = 3000;
 app.listen(port, () => {
-  console.log("app running in the server");
+  console.log('app running in the server');
 });
 
 //NOTES
 //similar endpoints on the main app and sub route will return the respoonse of the handler first defined in the list.
 // express gets acesss to params in the endpoint before the point where they are defined in the endpoint.
+// express will give an error in html format when a undefined route or wrong http method is used.
 
 //->
 //separate middleware, controller functions and server

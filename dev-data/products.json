@@ -1,0 +1,282 @@
+[
+    {
+        "name": "Dodge Corvette",
+        "brand": "Bugatti",
+        "price": "427992.36",
+        "priceDiscount": "8587.01",
+        "stock": "6.74"
+    },
+    {
+        "name": "Jaguar Focus",
+        "brand": "Tesla",
+        "price": "794740.77",
+        "priceDiscount": "6750.50",
+        "stock": "9.98"
+    },
+    {
+        "name": "Ferrari F-150",
+        "brand": "Volkswagen",
+        "price": "86414.21",
+        "priceDiscount": "9251.21",
+        "stock": "8.09"
+    },
+    {
+        "name": "Mini CX-9",
+        "brand": "Ford",
+        "price": "368374.34",
+        "priceDiscount": "7663.71",
+        "stock": "8.93"
+    },
+    {
+        "name": "BMW Durango",
+        "brand": "Toyota",
+        "price": "956201.39",
+        "priceDiscount": "5875.71",
+        "stock": "9.88"
+    },
+    {
+        "name": "Lamborghini LeBaron",
+        "brand": "Smart",
+        "price": "364887.37",
+        "priceDiscount": "5708.41",
+        "stock": "6.24"
+    },
+    {
+        "name": "Bugatti CX-9",
+        "brand": "Chevrolet",
+        "price": "57126.86",
+        "priceDiscount": "1171.57",
+        "stock": "7.41"
+    },
+    {
+        "name": "Ferrari Volt",
+        "brand": "Cadillac",
+        "price": "997685.72",
+        "priceDiscount": "5438.28",
+        "stock": "8.18"
+    },
+    {
+        "name": "Bentley Sentra",
+        "brand": "Honda",
+        "price": "270076.44",
+        "priceDiscount": "1701.12",
+        "stock": "5.36"
+    },
+    {
+        "name": "Porsche Altima",
+        "brand": "Mercedes Benz",
+        "price": "562023.07",
+        "priceDiscount": "7041.51",
+        "stock": "6.00"
+    },
+    {
+        "name": "BMW Camry",
+        "brand": "Audi",
+        "price": "830700.11",
+        "priceDiscount": "1542.10",
+        "stock": "9.53"
+    },
+    {
+        "name": "Toyota ATS",
+        "brand": "Smart",
+        "price": "200600.65",
+        "priceDiscount": "6414.70",
+        "stock": "5.19"
+    },
+    {
+        "name": "Nissan Altima",
+        "brand": "Polestar",
+        "price": "878187.08",
+        "priceDiscount": "9323.43",
+        "stock": "8.48"
+    },
+    {
+        "name": "BMW Countach",
+        "brand": "Tesla",
+        "price": "101869.09",
+        "priceDiscount": "8745.66",
+        "stock": "5.84"
+    },
+    {
+        "name": "Jaguar V90",
+        "brand": "Mazda",
+        "price": "699845.18",
+        "priceDiscount": "1693.79",
+        "stock": "9.68"
+    },
+    {
+        "name": "Chevrolet Element",
+        "brand": "Rolls Royce",
+        "price": "680252.63",
+        "priceDiscount": "1335.56",
+        "stock": "6.50"
+    },
+    {
+        "name": "Porsche Model Y",
+        "brand": "Mercedes Benz",
+        "price": "324458.14",
+        "priceDiscount": "4192.13",
+        "stock": "6.72"
+    },
+    {
+        "name": "Ford Golf",
+        "brand": "Chrysler",
+        "price": "201478.89",
+        "priceDiscount": "2716.74",
+        "stock": "5.39"
+    },
+    {
+        "name": "Mini CTS",
+        "brand": "Ford",
+        "price": "912975.66",
+        "priceDiscount": "4915.17",
+        "stock": "6.19"
+    },
+    {
+        "name": "Kia PT Cruiser",
+        "brand": "Fiat",
+        "price": "741701.81",
+        "priceDiscount": "8372.08",
+        "stock": "9.17"
+    },
+    {
+        "name": "Cadillac Grand Cherokee",
+        "brand": "Honda",
+        "price": "568050.92",
+        "priceDiscount": "9874.30",
+        "stock": "5.82"
+    },
+    {
+        "name": "Ferrari Camry",
+        "brand": "Porsche",
+        "price": "434173.48",
+        "priceDiscount": "3389.74",
+        "stock": "8.29"
+    },
+    {
+        "name": "Porsche Land Cruiser",
+        "brand": "Lamborghini",
+        "price": "829797.02",
+        "priceDiscount": "1407.53",
+        "stock": "8.13"
+    },
+    {
+        "name": "Lamborghini Model X",
+        "brand": "Rolls Royce",
+        "price": "248996.92",
+        "priceDiscount": "6518.53",
+        "stock": "9.13"
+    },
+    {
+        "name": "Volkswagen Camry",
+        "brand": "Mini",
+        "price": "614024.93",
+        "priceDiscount": "3624.04",
+        "stock": "7.63"
+    },
+    {
+        "name": "Jeep Model 3",
+        "brand": "Rolls Royce",
+        "price": "552403.81",
+        "priceDiscount": "6709.19",
+        "stock": "7.95"
+    },
+    {
+        "name": "Lamborghini F-150",
+        "brand": "Ferrari",
+        "price": "371725.41",
+        "priceDiscount": "4707.97",
+        "stock": "9.10"
+    },
+    {
+        "name": "Maserati Spyder",
+        "brand": "Chrysler",
+        "price": "102775.73",
+        "priceDiscount": "2351.78",
+        "stock": "9.29"
+    },
+    {
+        "name": "Mazda XC90",
+        "brand": "Land Rover",
+        "price": "163837.46",
+        "priceDiscount": "747.63",
+        "stock": "6.03"
+    },
+    {
+        "name": "Fiat El Camino",
+        "brand": "Land Rover",
+        "price": "542634.86",
+        "priceDiscount": "9135.29",
+        "stock": "5.90"
+    },
+    {
+        "name": "Tesla Camaro",
+        "brand": "Nissan",
+        "price": "595540.06",
+        "priceDiscount": "5834.68",
+        "stock": "6.61"
+    },
+    {
+        "name": "BMW Model 3",
+        "brand": "Aston Martin",
+        "price": "989997.05",
+        "priceDiscount": "7528.67",
+        "stock": "7.59"
+    },
+    {
+        "name": "Volvo Model T",
+        "brand": "Polestar",
+        "price": "708934.32",
+        "priceDiscount": "9224.29",
+        "stock": "7.35"
+    },
+    {
+        "name": "Mercedes Benz A8",
+        "brand": "Hyundai",
+        "price": "429307.83",
+        "priceDiscount": "2120.86",
+        "stock": "8.44"
+    },
+    {
+        "name": "Porsche Cruze",
+        "brand": "Jaguar",
+        "price": "559591.28",
+        "priceDiscount": "3885.38",
+        "stock": "6.69"
+    },
+    {
+        "name": "Ferrari Civic",
+        "brand": "Lamborghini",
+        "price": "507644.42",
+        "priceDiscount": "9712.27",
+        "stock": "7.85"
+    },
+    {
+        "name": "Polestar A4",
+        "brand": "Honda",
+        "price": "976682.84",
+        "priceDiscount": "5503.96",
+        "stock": "5.03"
+    },
+    {
+        "name": "Mercedes Benz Ranchero",
+        "brand": "Toyota",
+        "price": "985189.80",
+        "priceDiscount": "5465.07",
+        "stock": "5.67"
+    },
+    {
+        "name": "Jaguar Fortwo",
+        "brand": "Toyota",
+        "price": "628725.46",
+        "priceDiscount": "1610.98",
+        "stock": "6.96"
+    },
+    {
+        "name": "Cadillac Civic",
+        "brand": "Toyota",
+        "price": "566765.91",
+        "priceDiscount": "7385.10",
+        "stock": "9.23"
+    }
+]

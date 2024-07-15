@@ -1,0 +1,58 @@
+[
+  {
+    "name": "store-1",
+    "manager": "mary mark",
+    "location": "ruiru",
+    "type": "all",
+    "rating": 3
+  },
+  {
+    "name": "store-2",
+    "manager": "giteru antony",
+    "location": "k-west",
+    "type": "food",
+    "rating": 4
+  },
+  {
+    "name": "store-3",
+    "manager": "sam lii",
+    "location": "kasarani",
+    "type": "all",
+    "rating": 3
+  },
+  {
+    "name": "store-4",
+    "manager": "mariko sama",
+    "location": "ruaka",
+    "type": "groceries",
+    "rating": 4
+  },
+  {
+    "name": "store-5",
+    "manager": "mama pita",
+    "location": "kabete",
+    "type": "food",
+    "rating": 4
+  },
+  {
+    "name": "store-6",
+    "manager": "nkirote ann",
+    "location": "westlands",
+    "type": "groceries",
+    "rating": 3
+  },
+  {
+    "name": "store-7",
+    "manager": "ahmed sana",
+    "location": "ngong",
+    "type": "all",
+    "rating": 4
+  },
+  {
+    "name": "store-8",
+    "manager": "olouch evans",
+    "location": "kitengela",
+    "type": "food",
+    "rating": 3
+  }
+]

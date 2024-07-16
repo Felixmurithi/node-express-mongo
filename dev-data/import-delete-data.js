@@ -3,7 +3,7 @@ import { dirname } from 'path';
 import fs from 'fs';
 import mongoose from 'mongoose';
 import Store from '../models/storeModel.js';
-import Product from '../models/productsModel.js';
+import Product from '../models/productModel.js';
 
 //DIRNAME & FILNAME
 export const currentFilePath = fileURLToPath(import.meta.url);

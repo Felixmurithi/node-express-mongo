@@ -77,7 +77,7 @@ export const protect = catchAsync(async (req, res, next) => {
   const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET); // pass function to promisfiy will return a function that can return a promise. pass the token and time to verify to tyhe promisified function
 
   //3. check if user is still signed up- get user idfrom  the token
-  const user = await User.findById(decoded.id); // find by id doesnt need object passed with the _id field and value of id
+  const user = await User.findById(decoded.id).select('+role'); // find by id doesnt need object passed with the _id field and value of id
 
   if (!user) {
     errorResponse(

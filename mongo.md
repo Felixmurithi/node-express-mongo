@@ -80,3 +80,14 @@ Refeencing ids can be further broken down to child ids embedding, parent id emeb
 ## STORE, USER , PRODUCT-Template, Store products, MODEL
 
 normal uses not related to any store or products, general admin parent of all stores and store admin -one to one with store, each store has a one to to with store products. The products template has no direct relationship with the store proucts but used queried to generate their templates, store products adds other definitions includ
+
+## GROM SPATatial data
+
+radius= distance / erath radius in units of distance
+
+query with {location: $geoWithin : {$centerSphere: [[lng. lat], radians]}}
+
+index field set to type of query needed
+storeSchema.index({location: "2dsphere })
+
+aggregation- needs to be the first within the pipleine, geo fields with index and teh used field indiacetd with keys- resulots in meters

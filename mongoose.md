@@ -140,7 +140,74 @@ next();
 this.queryTime = Date.now(); next(); });` will get acess to the query object which can be enhanced to alter or remove some fields.
    `storeSchema.post(/^find/, function (docs, next) {next();});` gets acess to the docs returned from the query.
 3. ** aggregation middleware**- `storeSchema.pre('aggregate', function (next) {this.pipeline().unshift({ $match: { operational: { $ne: true } } }); next(); });` will intercept the aggregation pipeline
+   //post doesnt get acess to next()
 
 ## CUSTOM METHODS
 
 customs methods an be added to the schema, they get acess to the current values of the fields and copntribute to removing some data functionality from the controllers.
+
+## AGGREGATING DOC AND SAVING RESULTS OF THE AGGREGATION IN THE MODEL
+
+This aggregation can be done in a controller however to keep the controller thin, implementing this on the model is the ideal way.
+
+There are several challenages associated with implementing this on the model. The save hooks point to the doc, on saving the saved doc is only available in the post "save" hook. The aggregate method is not available on the docs but on the model and when querying and updating a doc the pre "findOneAnd", The updated query doc will; not be avaialble in this step.
+
+1. Craete statics method which `this` keyword points to the model where `this.aggregate` can be used.
+
+```js
+reviewSchema.statics.calcAverageRatings = async function (tourId) {
+  const stats = await this.aggregate([
+    {
+      $match: { tour: tourId },
+    },
+    {
+      $group: {
+        _id: '$tour',
+        nRating: { $sum: 1 },
+        avgRating: { $avg: '$rating' },
+      },
+    },
+  ]);
+  if (stats.length > 0) {
+    await Tour.findByIdAndUpdate(tourId, {
+      ratingsQuantity: stats[0].nRating,
+      ratingsAverage: stats[0].avgRating,
+    });
+  } else {
+    await Tour.findByIdAndUpdate(tourId, {
+      ratingsQuantity: 0,
+      ratingsAverage: 4.5,
+    });
+  }
+};
+```
+
+2. The aggregation method needs to be called on the saved doc in the post save hook and not pre save doc because that would not get access to the doc being saved. `this` points to the current document, the aggregation method defined on the model is accesed using the document constructor (document is an instance) of the model and the returned doc field can be passed.
+
+```js
+reviewSchema.post('save', function () {
+  // in this hook
+  this.constructor.calcAverageRatings(this.tour);
+});
+```
+
+3. To update aggregate stats after finding by id and updating the doc, the aggregation method has to be called after updating howe, //findOne and because that is the absraection behind the scenes
+
+In this middleware `this` points to the query, calling findone on the query retrieves the one doc being saved whose constructor can be used in the post middleware,. however in this hook the data has yet to be updated.
+
+```js
+reviewSchema.pre(/^findOneAnd/, async function (next) {
+  this.r = await this.findOne();
+  next();
+});
+```
+
+the aggregator is called in the post "findoneand" middleware
+
+```js
+reviewSchema.post(/^findOneAnd/, async function () {
+  await this.r.constructor.calcAverageRatings(this.r.tour);
+});
+```
+
+> findOneand is absstracted to findByIDandUpdate. used here because taht is how the middleware is written

@@ -1,282 +1,40 @@
-[
-    {
-        "name": "Dodge Corvette",
-        "brand": "Bugatti",
-        "price": "427992.36",
-        "priceDiscount": "8587.01",
-        "stock": "6.74"
-    },
-    {
-        "name": "Jaguar Focus",
-        "brand": "Tesla",
-        "price": "794740.77",
-        "priceDiscount": "6750.50",
-        "stock": "9.98"
-    },
-    {
-        "name": "Ferrari F-150",
-        "brand": "Volkswagen",
-        "price": "86414.21",
-        "priceDiscount": "9251.21",
-        "stock": "8.09"
-    },
-    {
-        "name": "Mini CX-9",
-        "brand": "Ford",
-        "price": "368374.34",
-        "priceDiscount": "7663.71",
-        "stock": "8.93"
-    },
-    {
-        "name": "BMW Durango",
-        "brand": "Toyota",
-        "price": "956201.39",
-        "priceDiscount": "5875.71",
-        "stock": "9.88"
-    },
-    {
-        "name": "Lamborghini LeBaron",
-        "brand": "Smart",
-        "price": "364887.37",
-        "priceDiscount": "5708.41",
-        "stock": "6.24"
-    },
-    {
-        "name": "Bugatti CX-9",
-        "brand": "Chevrolet",
-        "price": "57126.86",
-        "priceDiscount": "1171.57",
-        "stock": "7.41"
-    },
-    {
-        "name": "Ferrari Volt",
-        "brand": "Cadillac",
-        "price": "997685.72",
-        "priceDiscount": "5438.28",
-        "stock": "8.18"
-    },
-    {
-        "name": "Bentley Sentra",
-        "brand": "Honda",
-        "price": "270076.44",
-        "priceDiscount": "1701.12",
-        "stock": "5.36"
-    },
-    {
-        "name": "Porsche Altima",
-        "brand": "Mercedes Benz",
-        "price": "562023.07",
-        "priceDiscount": "7041.51",
-        "stock": "6.00"
-    },
-    {
-        "name": "BMW Camry",
-        "brand": "Audi",
-        "price": "830700.11",
-        "priceDiscount": "1542.10",
-        "stock": "9.53"
-    },
-    {
-        "name": "Toyota ATS",
-        "brand": "Smart",
-        "price": "200600.65",
-        "priceDiscount": "6414.70",
-        "stock": "5.19"
-    },
-    {
-        "name": "Nissan Altima",
-        "brand": "Polestar",
-        "price": "878187.08",
-        "priceDiscount": "9323.43",
-        "stock": "8.48"
-    },
-    {
-        "name": "BMW Countach",
-        "brand": "Tesla",
-        "price": "101869.09",
-        "priceDiscount": "8745.66",
-        "stock": "5.84"
-    },
-    {
-        "name": "Jaguar V90",
-        "brand": "Mazda",
-        "price": "699845.18",
-        "priceDiscount": "1693.79",
-        "stock": "9.68"
-    },
-    {
-        "name": "Chevrolet Element",
-        "brand": "Rolls Royce",
-        "price": "680252.63",
-        "priceDiscount": "1335.56",
-        "stock": "6.50"
-    },
-    {
-        "name": "Porsche Model Y",
-        "brand": "Mercedes Benz",
-        "price": "324458.14",
-        "priceDiscount": "4192.13",
-        "stock": "6.72"
-    },
-    {
-        "name": "Ford Golf",
-        "brand": "Chrysler",
-        "price": "201478.89",
-        "priceDiscount": "2716.74",
-        "stock": "5.39"
-    },
-    {
-        "name": "Mini CTS",
-        "brand": "Ford",
-        "price": "912975.66",
-        "priceDiscount": "4915.17",
-        "stock": "6.19"
-    },
-    {
-        "name": "Kia PT Cruiser",
-        "brand": "Fiat",
-        "price": "741701.81",
-        "priceDiscount": "8372.08",
-        "stock": "9.17"
-    },
-    {
-        "name": "Cadillac Grand Cherokee",
-        "brand": "Honda",
-        "price": "568050.92",
-        "priceDiscount": "9874.30",
-        "stock": "5.82"
-    },
-    {
-        "name": "Ferrari Camry",
-        "brand": "Porsche",
-        "price": "434173.48",
-        "priceDiscount": "3389.74",
-        "stock": "8.29"
-    },
-    {
-        "name": "Porsche Land Cruiser",
-        "brand": "Lamborghini",
-        "price": "829797.02",
-        "priceDiscount": "1407.53",
-        "stock": "8.13"
-    },
-    {
-        "name": "Lamborghini Model X",
-        "brand": "Rolls Royce",
-        "price": "248996.92",
-        "priceDiscount": "6518.53",
-        "stock": "9.13"
-    },
-    {
-        "name": "Volkswagen Camry",
-        "brand": "Mini",
-        "price": "614024.93",
-        "priceDiscount": "3624.04",
-        "stock": "7.63"
-    },
-    {
-        "name": "Jeep Model 3",
-        "brand": "Rolls Royce",
-        "price": "552403.81",
-        "priceDiscount": "6709.19",
-        "stock": "7.95"
-    },
-    {
-        "name": "Lamborghini F-150",
-        "brand": "Ferrari",
-        "price": "371725.41",
-        "priceDiscount": "4707.97",
-        "stock": "9.10"
-    },
-    {
-        "name": "Maserati Spyder",
-        "brand": "Chrysler",
-        "price": "102775.73",
-        "priceDiscount": "2351.78",
-        "stock": "9.29"
-    },
-    {
-        "name": "Mazda XC90",
-        "brand": "Land Rover",
-        "price": "163837.46",
-        "priceDiscount": "747.63",
-        "stock": "6.03"
-    },
-    {
-        "name": "Fiat El Camino",
-        "brand": "Land Rover",
-        "price": "542634.86",
-        "priceDiscount": "9135.29",
-        "stock": "5.90"
-    },
-    {
-        "name": "Tesla Camaro",
-        "brand": "Nissan",
-        "price": "595540.06",
-        "priceDiscount": "5834.68",
-        "stock": "6.61"
-    },
-    {
-        "name": "BMW Model 3",
-        "brand": "Aston Martin",
-        "price": "989997.05",
-        "priceDiscount": "7528.67",
-        "stock": "7.59"
-    },
-    {
-        "name": "Volvo Model T",
-        "brand": "Polestar",
-        "price": "708934.32",
-        "priceDiscount": "9224.29",
-        "stock": "7.35"
-    },
-    {
-        "name": "Mercedes Benz A8",
-        "brand": "Hyundai",
-        "price": "429307.83",
-        "priceDiscount": "2120.86",
-        "stock": "8.44"
-    },
-    {
-        "name": "Porsche Cruze",
-        "brand": "Jaguar",
-        "price": "559591.28",
-        "priceDiscount": "3885.38",
-        "stock": "6.69"
-    },
-    {
-        "name": "Ferrari Civic",
-        "brand": "Lamborghini",
-        "price": "507644.42",
-        "priceDiscount": "9712.27",
-        "stock": "7.85"
-    },
-    {
-        "name": "Polestar A4",
-        "brand": "Honda",
-        "price": "976682.84",
-        "priceDiscount": "5503.96",
-        "stock": "5.03"
-    },
-    {
-        "name": "Mercedes Benz Ranchero",
-        "brand": "Toyota",
-        "price": "985189.80",
-        "priceDiscount": "5465.07",
-        "stock": "5.67"
-    },
-    {
-        "name": "Jaguar Fortwo",
-        "brand": "Toyota",
-        "price": "628725.46",
-        "priceDiscount": "1610.98",
-        "stock": "6.96"
-    },
-    {
-        "name": "Cadillac Civic",
-        "brand": "Toyota",
-        "price": "566765.91",
-        "priceDiscount": "7385.10",
-        "stock": "9.23"
-    }
-]
+[{"name":"Russian Prince","brand":"Armstrong-Sanford","measurement":335,"price":935,"priceDiscount":43,"stock":17},
+{"name":"Pasta - Spaghetti, Dry","brand":"Orn LLC","measurement":547,"price":158,"priceDiscount":29,"stock":20},
+{"name":"Glass Clear 8 Oz","brand":"Boyle Inc","measurement":222,"price":988,"priceDiscount":41,"stock":16},
+{"name":"Bagelers","brand":"Oberbrunner LLC","measurement":178,"price":138,"priceDiscount":29,"stock":7},
+{"name":"Seedlings - Clamshell","brand":"Senger-Waelchi","measurement":135,"price":947,"priceDiscount":39,"stock":5},
+{"name":"Leeks - Large","brand":"Kuvalis, Weimann and Schneider","measurement":301,"price":982,"priceDiscount":11,"stock":13},
+{"name":"Soup Campbells - Italian Wedding","brand":"Kassulke-Ondricka","measurement":228,"price":689,"priceDiscount":16,"stock":20},
+{"name":"Chevere Logs","brand":"Jones, McDermott and Blanda","measurement":839,"price":509,"priceDiscount":39,"stock":10},
+{"name":"Praline Paste","brand":"Von, Gerlach and Dare","measurement":187,"price":229,"priceDiscount":13,"stock":13},
+{"name":"Cheese - Grie Des Champ","brand":"Jaskolski and Sons","measurement":890,"price":645,"priceDiscount":16,"stock":13},
+{"name":"Wasabi Paste","brand":"Reinger-Brown","measurement":408,"price":747,"priceDiscount":13,"stock":17},
+{"name":"Soup - Knorr, Ministrone","brand":"Mueller-Cruickshank","measurement":450,"price":821,"priceDiscount":20,"stock":20},
+{"name":"Pork - Back, Long Cut, Boneless","brand":"Fahey and Sons","measurement":180,"price":176,"priceDiscount":32,"stock":15},
+{"name":"Ketchup - Tomato","brand":"Turcotte-Harber","measurement":418,"price":861,"priceDiscount":45,"stock":20},
+{"name":"Shrimp - Black Tiger 16/20","brand":"Koelpin-Turcotte","measurement":953,"price":268,"priceDiscount":11,"stock":8},
+{"name":"Salmon - Sockeye Raw","brand":"Becker Group","measurement":823,"price":174,"priceDiscount":34,"stock":14},
+{"name":"Cheese - Havarti, Salsa","brand":"Herman, Rosenbaum and Pagac","measurement":663,"price":296,"priceDiscount":48,"stock":12},
+{"name":"Ham - Black Forest","brand":"Cremin, Rath and Bahringer","measurement":214,"price":753,"priceDiscount":42,"stock":12},
+{"name":"Apple - Northern Spy","brand":"Langworth, Pollich and Wiza","measurement":662,"price":287,"priceDiscount":13,"stock":10},
+{"name":"Foam Tray S2","brand":"Lehner LLC","measurement":800,"price":849,"priceDiscount":23,"stock":18},
+{"name":"Plastic Arrow Stir Stick","brand":"Cormier and Sons","measurement":468,"price":667,"priceDiscount":23,"stock":6},
+{"name":"Glass - Juice Clear 5oz 55005","brand":"Vandervort, McClure and Hills","measurement":210,"price":981,"priceDiscount":24,"stock":8},
+{"name":"Lamb Rack Frenched Australian","brand":"Schultz, Osinski and Mayer","measurement":554,"price":316,"priceDiscount":12,"stock":16},
+{"name":"Olives - Green, Pitted","brand":"Muller LLC","measurement":946,"price":639,"priceDiscount":24,"stock":7},
+{"name":"Bread - Crumbs, Bulk","brand":"Jacobs-Bartell","measurement":491,"price":492,"priceDiscount":16,"stock":16},
+{"name":"Appetiser - Bought","brand":"Heidenreich, Bergstrom and Balistreri","measurement":834,"price":436,"priceDiscount":46,"stock":11},
+{"name":"Pastry - Choclate Baked","brand":"Steuber-Dickinson","measurement":481,"price":498,"priceDiscount":21,"stock":11},
+{"name":"Buttons","brand":"Bechtelar LLC","measurement":592,"price":858,"priceDiscount":32,"stock":16},
+{"name":"Pasta - Bauletti, Chicken White","brand":"Kautzer Group","measurement":916,"price":412,"priceDiscount":24,"stock":16},
+{"name":"Longos - Lasagna Beef","brand":"Jacobs LLC","measurement":719,"price":442,"priceDiscount":47,"stock":6},
+{"name":"Worcestershire Sauce","brand":"Spencer-Crona","measurement":524,"price":130,"priceDiscount":45,"stock":16},
+{"name":"Veal - Sweetbread","brand":"Nolan-Doyle","measurement":672,"price":998,"priceDiscount":36,"stock":9},
+{"name":"Ecolab - Medallion","brand":"Mayer, Ullrich and Mayer","measurement":538,"price":144,"priceDiscount":41,"stock":18},
+{"name":"Sardines","brand":"Ferry LLC","measurement":934,"price":828,"priceDiscount":14,"stock":7},
+{"name":"Chips - Assorted","brand":"Goyette-Blick","measurement":895,"price":744,"priceDiscount":44,"stock":8},
+{"name":"Juice - Orangina","brand":"Ebert, Collins and Donnelly","measurement":471,"price":305,"priceDiscount":23,"stock":5},
+{"name":"Bread - Petit Baguette","brand":"Wisoky-Fay","measurement":108,"price":122,"priceDiscount":48,"stock":11},
+{"name":"Tuna - Loin","brand":"Swift LLC","measurement":576,"price":839,"priceDiscount":28,"stock":9},
+{"name":"Bread - Rosemary Focaccia","brand":"Lang-Schumm","measurement":336,"price":764,"priceDiscount":32,"stock":20},
+{"name":"Vinegar - Red Wine","brand":"Kautzer LLC","measurement":502,"price":439,"priceDiscount":46,"stock":11}]

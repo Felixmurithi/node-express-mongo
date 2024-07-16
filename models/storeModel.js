@@ -103,6 +103,14 @@ storeSchema.virtual('area').get(function () {
   return this.location;
 });
 
+//virtual populate, links the refrence of the store
+//with this set-up storing the arrays of the child products can be avoided to avoid infinite array growth.
+storeSchema.virtual('products', {
+  ref: 'Product',
+  foreignField: 'store',
+  localField: '_id',
+});
+
 //QUERY MIDDLEWARE
 //runs when there query object is craeted by the model
 storeSchema.pre(/^find/, function (next) {

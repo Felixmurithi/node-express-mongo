@@ -1,6 +1,7 @@
 import User from '../models/userModel.js';
 import catchAsync from '../utils/catchAsync.js';
 import AppError from '../utils/appError.js';
+import { deleteOne, getOne } from './handleFactory.js';
 
 const filterObj = (obj, ...allowedFields) => {
   const newObj = {}; // has to be decared here so that it can  be returned
@@ -10,6 +11,12 @@ const filterObj = (obj, ...allowedFields) => {
   });
   return newObj;
 };
+
+export const getMe = (req, res, next) => {
+  req.params.id = req.user.id;
+  next();
+};
+export const getUser = getOne(User);
 
 export const updateMe = catchAsync(async (req, res, next) => {
   //
@@ -32,15 +39,7 @@ export const updateMe = catchAsync(async (req, res, next) => {
   });
 });
 
-export const deleteMe = catchAsync(async (req, res) => {
-  await User.findByIdAndUpdate(req.user.id, { active: false });
-
-  res.status(204).json({
-    status: 'success',
-    data: null,
-  });
-});
-
+export const deleteMe = deleteOne(User);
 export const getAllUsers = catchAsync(async (req, res, next) => {
   const users = await User.find();
 
@@ -48,21 +47,6 @@ export const getAllUsers = catchAsync(async (req, res, next) => {
     status: 'sucess',
     results: users.length,
     data: users,
-  });
-});
-
-export const getUser = catchAsync(async (req, res, next) => {
-  const userId = req.params.id; //id defined in the route
-
-  const user = await User.findById(userId); //user.findOne({_id: userId})
-
-  if (!user) {
-    return next(new AppError('NO user found with that id', 404));
-  }
-
-  res.status(201).json({
-    status: 'sucess',
-    data: user,
   });
 });
 

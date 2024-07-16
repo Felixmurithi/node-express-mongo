@@ -4,12 +4,14 @@ import {
   login,
   protect,
   resetpassword,
+  restrictTo,
   signup,
   updatepassword,
 } from '../controllers/authController.js';
 import {
   deleteMe,
   getAllUsers,
+  getMe,
   getUser,
   updateMe,
 } from '../controllers/userController.js';
@@ -20,10 +22,14 @@ userRouter.post('/signup', signup);
 userRouter.post('/login', login);
 userRouter.post('/forgotpassword', forgotpassword);
 userRouter.patch('/resetpassword/:token', resetpassword);
-userRouter.patch('/updatepassword', protect, updatepassword);
-userRouter.patch('/updateme', protect, updateMe);
-userRouter.delete('/deleteme', protect, deleteMe);
 
+userRouter.use(protect);
+userRouter.patch('/updatepassword', updatepassword);
+userRouter.patch('/updateme', updateMe);
+userRouter.delete('/deleteme', deleteMe);
+userRouter.get('/me', getMe, getUser);
+
+userRouter.use(restrictTo('general-admin'));
 userRouter.route('/').get(getAllUsers);
 userRouter.route('/:id').get(getUser);
 

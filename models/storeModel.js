@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import validator from 'validator';
 
 //SCHEMA
 const storeSchema = new mongoose.Schema(
@@ -104,7 +103,7 @@ storeSchema.virtual('area').get(function () {
 });
 
 //virtual populate, links the refrence of the store
-//with this set-up storing the arrays of the child products can be avoided to avoid infinite array growth.
+//
 storeSchema.virtual('products', {
   ref: 'Product',
   foreignField: 'store',

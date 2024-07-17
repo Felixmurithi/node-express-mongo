@@ -35,7 +35,6 @@ const sendErrorProd = (err, res) => {
     //log error
     console.error(' ERROR 💥', err);
     //makijg it visisble in the logs
-
     res.status(500).json({
       status: 'error',
       message: 'Something went very wrong',
@@ -58,7 +57,6 @@ const globalErrorhandler = (err, req, res, next) => {
   if (process.env.NODE_ENV === 'production') {
     let error = Object.create(err);
 
-    // handles some of the operational errors sent by monngoose such as invalid id, these error is resolved before we can send the operational error.
     if (error.name === 'CastError') {
       error = handleCastError(error);
     }

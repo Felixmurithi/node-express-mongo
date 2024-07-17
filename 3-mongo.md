@@ -1,10 +1,10 @@
 # mongo
 
-mongo is document based perfortmant, scalable, flexible.
+mongo is document based perfomant, scalable, flexible.
 data store in document collection, each document with unique IDs and capable or storing mutiple data formats using the bson-typed json
 format.
 max size 16 mb
-documents can be embedded in other documents.
+documents can be embended in other documents.
 mongo is nore relational
 
 ## installing.
@@ -31,13 +31,13 @@ install mongo compass for GUI database access.
 
 ## database
 
-1. show all the current database`show dbs`
-2. Create or switch to an existing databsdse `use natours-test` `natour-test db`.
-3. show the collection in a db `show collections`.
-4. with mongo data is brecords are inserted or referenced as functions which are converted into bson,
-5. to insert once document into the tours collection `db.tours.insertOne({name: "The Forest Hiker", price:297, rating: 4.7})`
+1. show all the current database `show dbs`
+2. Create or switch to an existing databe `use test-db`.
+3. Show the collectiosn in a db `show collections`.
+4. Records are inserted or referenced in **bson** format.
+5. To insert one document into the tours collection `db.tours.insertOne({name: "The Forest Hiker", price:297, rating: 4.7})`
 
-6. insert more than one document into the two tours to tours`db.tours.insertMany([{name: "The Sea Explorer", price: 497, rating :4.8},{name: "The Snow Adventurer", price:997, rating: 4.9, difficulty: "easy"}])`
+6. insert more than one document into the two tours collection`db.tours.insertMany([{name: "The Sea Explorer", price: 497, rating :4.8},{name: "The Snow Adventurer", price:997, rating: 4.9, difficulty: "easy"}])`
 
 7. show all documents in a collection ` db.tours.find()` find the data in the `tours`
 8. to find all records with that property value pair pass an object taht represenst that record `db.tours.find({difficulty:"easy"})`
@@ -79,7 +79,7 @@ Refeencing ids can be further broken down to child ids embedding, parent id emeb
 
 ## STORE, USER , PRODUCT-Template, Store products, MODEL
 
-normal uses not related to any store or products, general admin parent of all stores and store admin -one to one with store, each store has a one to to with store products. The products template has no direct relationship with the store proucts but used queried to generate their templates, store products adds other definitions includ
+Users are not directlu related to any stores or products. general admin parent of all stores and store admin -one to one with store, each store has a one to to with store products. The products template has no direct relationship with the store proucts but used queried to generate their templates, store products adds other definitions includ
 
 ## GROM SPATatial data
 

@@ -56,17 +56,6 @@ export const deleteOne = (Model) =>
       data: null,
     });
   });
-// export const deleteProduct = catchAsync(async (req, res, next) => {
-//   const storeId = req.params.id;
-//   const store = await Product.findByIdAndDelete(storeId);
-//   if (!store) {
-//     return next(new AppError('NO product found with that id', 404));
-//   }
-//   res.status(201).json({
-//     status: 'sucess',
-//     data: null,
-//   });
-// });
 
 export const updateOne = (Model) =>
   catchAsync(async (req, res, next) => {

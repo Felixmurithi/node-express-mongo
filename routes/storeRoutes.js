@@ -14,10 +14,6 @@ import productRouter from './productRouter.js';
 
 const storeRouter = express.Router();
 
-// mounting a sub route on the sub router
-// storeRouter.use("/products", reviewRouter)
-// const productRouter = express.Router({mergeParams: true}); // that option because each routes only gets acess to its own params
-
 storeRouter.use('/:storeId/products', productRouter);
 
 storeRouter
